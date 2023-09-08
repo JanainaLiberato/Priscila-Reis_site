@@ -1,0 +1,162 @@
+
+html{
+    overflow-x: hidden;
+}
+
+.container, .mail{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+header, footer{
+    background-color:#f5b959 ;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header > .container,
+footer > .container{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav{
+    background-color: #f3c272;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+
+span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+#about img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section{
+    padding: 36px 0;
+}
+
+#redes{
+    padding: 24px;
+}
+
+#about{
+    padding: 24px;
+    color: #5d5d5d;
+}
+
+#about h2{
+    color: #5d5d5d;
+    font-weight: bold;
+}
+.social-links img{
+    height: 44px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:767px){
+    .container{
+       max-width: 90%; 
+       align-items: center;
+    }
+
+    header div.container{
+        flex-direction: column;
+    }
+
+    .menu-hamburguer{
+        display: block;           
+    }
+
+    
+    .container li{
+        font-size: 14px;
+        align-items: center;
+    }
+           
+    nav{
+      position: absolute;
+      top: 8vh;  
+      display: block;
+      right: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    nav li{
+        margin-left: 0;
+    }
+
+    .container-flex{
+        display: block;
+    }
+
+     #about img{
+        max-width: 99%;        
+    }
+
+    #about{
+        font-size: 1.0;
+    }
+
+
+    
+
+    
+}
+
+ 
+
+
+
+
